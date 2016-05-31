@@ -25,7 +25,6 @@ class ViewController: UIViewController,PKPaymentAuthorizationViewControllerDeleg
                 let btnPay = PKPaymentButton(type: PKPaymentButtonType.Buy, style: PKPaymentButtonStyle.Black)
                 btnPay.frame = CGRectMake(100, 200, 80, 40)
                 btnPay.addTarget(self, action: #selector(ViewController.payAction), forControlEvents: UIControlEvents.TouchUpInside)
-            
                 self.view.addSubview(btnPay)
             }
         } else {
